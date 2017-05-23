@@ -1,0 +1,73 @@
+@import url('/assets/css/bootstrap/bootstrap.css');
+
+body {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#logo {
+    text-align:center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 9px;
+    font-weight: bold;
+}
+
+.navbar-inverse {
+    background-color: #224;
+}
+
+#logo:hover {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.navlink {
+    color: #ccc;
+    float: left;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 5px;
+}
+
+.footer-text {
+    color: #bbb;
+    text-align: center;
+    padding-left: 9px;
+    padding-bottom: 9px;
+    font-size: 7pt;
+    vertical-align: middle;
+}
+
+.line-seperator {
+    height: 1px;
+    border-bottom: 1px solid #313030;
+    padding-top: 1px;
+    margin-bottom: 10px;
+}
+.navlink:hover {
+    text-decoration: none;
+    color: #888;
+}
+.nav-footer {
+    min-height: 30px;
+    height: 30px;
+}
+td {
+    text-align: center;
+}
+
+/* hack to fix responsive tables in Firefox */
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}

@@ -11,13 +11,6 @@ function formatTemp(num, decimals) {
     return matches[1];
 }
 
-function toCelsius(num, type) {
-    if (type == "fahrenheit") {
-        
-    }
-}
-
-
 function convertTemp() {
     var temperatureToConvert = parseFloat($("#inputTemp").val());
     
