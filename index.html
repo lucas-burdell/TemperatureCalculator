@@ -24,13 +24,22 @@
         <div class="container">
             <div class="jumbotron">
                 <h1>Temp Converter</h1>
-                <h4>Convert from fahrenheit to celsius! Now with 110% more styling!</h4>
+                <h4>Convert from any temperature measurement to another!</h4>
                 <form class="form-inline">
                     <div class="form-group">
-                        <label class="sr-only" for="inputTemp">Input Temperature (In Fahrenheit</label>
+                        <label class="sr-only" for="inputTemp">Input Temperature</label>
                         <div class="input-group">
-                            <input type="number" class="form-control" id="inputTemp" placeholder="Degrees">
-                         <div class="input-group-addon">&deg;F</div>
+                            <input type="tel" class="form-control" id="inputTemp" placeholder="Input temperature here">
+                                <select class="form-control" id="tempSelect">
+                                    <option value="fahrenheit">&deg;F</option>
+                                    <option value="celsius">&deg;C</option>
+                                    <option value="kelvin">&deg;K</option>
+                                    <option value="rankine">&deg;R</option>
+                                    <option value="delisle">&deg;De</option>
+                                    <option value="newton">&deg;N</option>
+                                    <option value="reaumur">&deg;Ré</option>
+                                    <option value="romer">&deg;Rø</option>
+                                </select>
                      </div>
                     </div>
                     <button onclick="convertTemp()" type="button" class="btn btn-primary" id="convertTempButton" >Convert</button>
@@ -44,17 +53,44 @@
                                 <h4 class="modal-title" id="tempModalLabel">Conversions</h4>
                             </div>
                             <div class="modal-body">
+                                <p id="tempData"></p>
                                 <div class="table-responsive">
-                                    <p id="tempData"></p>
                                     <table class="table table-condensed">
-                                        <!-- TODO: TEMP TABLES -->
                                         <tr>
                                             <td><h4>Measurement</h4></td>
                                             <td><h4>Result</h4></td>
                                         </tr>
                                         <tr>
+                                            <td><p>Fahrenheit</p></td>
+                                            <td><p id="fahrenheit"></p></td>
+                                        </tr>
+                                        <tr>
                                             <td><p>Celsius</p></td>
                                             <td><p id="celsius"></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>Kelvin</p></td>
+                                            <td><p id="kelvin"></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>Rankine</p></td>
+                                            <td><p id="rankine"></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>Delisle</p></td>
+                                            <td><p id="delisle"></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>Newton</p></td>
+                                            <td><p id="newton"></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>Réaumur</p></td>
+                                            <td><p id="reaumur"></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p>Rømer</p></td>
+                                            <td><p id="romer"></p></td>
                                         </tr>
                                     </table>
                                 </div>
