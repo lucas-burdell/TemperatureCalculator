@@ -83,17 +83,4 @@ function convertTemp() {
     $("#tempData").text("Your input: " + (formatTemp(temperatureToConvert, 6)) + $("#tempSelect").find(':selected').text());
     $("#inputTemp").val('');
     $("#tempModal").modal('show');
-    /*
-     *
-    var celsius = (temperatureToConvert - 32) * (5.0/9.0);
-    // var ptext = temperatureToConvert.toFixed(3).concat(" in Fahrenheit is ").concat(celsius.toFixed(3)).concat(" in celsius!");
-    // var ptext = sprintf("%.6f in Fahrenheit is %.6f in celsius!", temperatureToConvert, celsius);
-    temperatureToConvert = formatTemp(temperatureToConvert, 6);
-    celsius = formatTemp(celsius, 6);
-    $("#celsius").text(celsius);
-    //$("#tempData").text(ptext);
-    console.log(celsius);
-    $("#tempModal").modal('show');
-    $("#inputTemp").val('');
-    */
 }
